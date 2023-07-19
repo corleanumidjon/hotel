@@ -1,0 +1,25 @@
+.container {
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.btn {
+  &__light {
+    font-family: "Open Sans", sans-serif;
+    color: #003580;
+    background-color: #ffffff;
+  }
+  &__dark {
+    font-family: "Open Sans", sans-serif;
+    height: 40px;
+    color: #ffffff;
+    background-color: #0071c2;
+    border: none;
+    &:hover {
+      color: #eeeeee !important;
+    }
+    &:active {
+      box-shadow: 1px 1px 10px #ffffff !important;
+    }
+  }
+}

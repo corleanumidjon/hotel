@@ -1,0 +1,39 @@
+.footer {
+  padding: 40px 0 10px;
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__item {
+    font-size: small;
+    color: #003580;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.9;
+    }
+  }
+  &__text {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    &__lists {
+      row-gap: 50px;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+}

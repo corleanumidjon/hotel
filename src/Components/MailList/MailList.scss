@@ -1,0 +1,39 @@
+.mail {
+  background-color: #003580;
+  padding: 50px 0;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    color: white;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: xx-large;
+    letter-spacing: 1px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__input {
+    width: 300px;
+    height: 40px;
+    font-family: "Open Sans", sans-serif;
+    color: #003580;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mail {
+    &__title {
+      text-align: center;
+    }
+    &__box {
+      width: 100%;
+    }
+  }
+}
